@@ -19,7 +19,12 @@ function helloTriangle() {
 
     const gl = canvas.getContext('webgl2');
     if (!gl) {
-        showError('This browser does not support WebGl2. This demo will not work');
+        const isWebGl1Supported = !!canvas.getContext('webgl');
+        if (isWebGl1Supported) {
+            showError('This browser support WebGl 1 but not WebGL2 - Make sure WebGl 2 isn\'t disabled in your browser.');
+        } else {
+            showError('This browser does not support WebGl. This demo will not work');
+        }
         return;
     }
 }

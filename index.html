@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-        html, head, body{
-            margin: 0;
-            padding: 25px;
-            background-color: #2a2a2a;
-        }
-        #demo-canvas{
-            width: 800px;
-            height: 800px;
-            background-color: #da6052;
-        }
-      #error-box{
+      html,
+      head,
+      body {
+        margin: 0;
+        padding: 25px;
+        background-color: #2a2a2a;
+      }
+      #demo-canvas {
+        width: 800px;
+        height: 800px;
+        background-color: #da6052;
+      }
+      #error-box {
         color: #fd8080;
         font-weight: 500;
         font-style: 18px;
@@ -23,15 +25,14 @@
         padding: 25px;
         margin-top: 20px;
       }
-
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <canvas id="demo-canvas"></canvas>
     <!--Doing a little error output in the HTML is nice testing on mobilewhere you don;t have access to console.log()-->
     <div id="error-box">
-        <span id="error-box-title">Error messages, if any, go in here</span>
+      <span id="error-box-title">Error messages, if any, go in here</span>
     </div>
     <script src="hello-triangle.js"></script>
-</body>
+  </body>
 </html>
